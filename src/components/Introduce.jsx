@@ -1,7 +1,48 @@
-import { useEffect } from 'react'
+import React, { useEffect, useState } from 'react';
+import EasyPieChart from 'easy-pie-chart';
 
 function Introduce() {
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    function handleScroll() {
+      const positionTop = window.scrollY;
+      if (positionTop >= 600 && !isScrolled) {
+        setIsScrolled(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isScrolled]);
+
+  useEffect(() => {
+    if (isScrolled) {
+      const charts = document.getElementsByClassName('chart');
+      Array.from(charts).forEach((chart) => {
+        const barColor = chart.dataset.barColor;
+        createChart(chart, barColor);
+      });
+    }
+  }, [isScrolled]);
+
+  function createChart(chartElement, barColor) {
+    new EasyPieChart(chartElement, {
+      barColor: barColor,
+      trackColor: '#fff',
+      scaleColor: 'transparent',
+      lineCap: 'round',
+      lineWidth: 10,
+      size: 100,
+      animate: 2000,
+      onStep: function(from, to, percent) {
+        this.el.querySelector('.percent').innerText = Math.round(percent);
+      }
+    });
+  }
 
   return (
     <section className="introduce">
@@ -20,25 +61,29 @@ function Introduce() {
             </ul>
           </div>
           <div 
-            className="introduce_skill" 
-            data-aos="fade-up-right"
-            data-aos-anchor-placement="top-bottom"
+            className="introduce_skill"
+            data-aos="fade-right"
           >
             <div 
-              className="chart chart1"
-              data-percent="55"
-              data-bar-color="#2079ff"
-            ><span className="title">chart1</span></div>
-            <div
-              className="chart chart2"
+              className="chart" 
+              data-bar-color="#729FE3"
+              data-percent="65">
+              <span className="percent">0</span>
+            </div>
+            <div 
+              className="chart"
+              data-bar-color="#8996AB"
               data-percent="35"
-              data-bar-color="#97ff20"
-            ><span className="title">chart2</span></div>
-            <div
-              className="chart chart3"
-              data-percent="85"
-              data-bar-color="#ff9e20"  
-            ><span className="title">chart3</span></div>
+            >
+              <span className="percent">0</span>
+            </div>
+            <div 
+              className="chart" 
+              data-bar-color="#2F425E"
+              data-percent="80"
+            >
+              <span className="percent">0</span>
+            </div>
           </div>
         </div>
         <div className="introduce_img" data-aos="fade-left">

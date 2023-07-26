@@ -72,5 +72,6 @@ b {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: auto !important;
+    overflow: hidden;
     box-sizing: border-box;
 }
