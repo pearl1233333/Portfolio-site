@@ -8,20 +8,32 @@ function BgText() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to('.scroll-text.first p', {
-      y: '-100%',
+      y: '-120%',
+      opacity: 1,
       scrollTrigger: {
         trigger: '.scroll-text.first',
         scroller: '#smooth-wrapper',
         scrub: true,
+        smooth: 1,
+        normalizeScroll: true, 
+        ignoreMobileResize: true,
+        effects: true,
+        preventDefault: true
       },
     });
 
     gsap.to('.scroll-text.second p', {
-      y: '-100%',
+      y: '-120%',
+      opacity: 1,
       scrollTrigger: {
         trigger: '.scroll-text.second',
         scroller: '#smooth-wrapper',
         scrub: true,
+        smooth: 1,
+        normalizeScroll: true, 
+        ignoreMobileResize: true,
+        effects: true,
+        preventDefault: true
       },
     });
     

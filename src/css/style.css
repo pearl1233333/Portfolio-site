@@ -4,8 +4,9 @@ body, html {
 }
 
 body {
+  width: 100%;
   background-color: #cbe0ff;
-  overflow: visible;
+  overflow-x: hidden;
 }
 
 
@@ -13,7 +14,8 @@ body {
             메인배너 
 ------------------------------- */
 /* 메인배너 배경 */
-.main_title {
+.main_title {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,6 +80,7 @@ body {
 }
 .title-line {
   display: inline-block;
+  font-weight: bold;
   opacity: 0;
   transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
   -webkit-animation: revealText 1000ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
@@ -169,27 +172,39 @@ body {
   font-weight: 500;
 }
 .introduce_info ul li {
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 7px;
   list-style: none;
-  font-size: (3rem, 10.5vw, 120px);
+  font-size: 1rem;
   line-height: 1.35rem;
 }
+.introduce_info ul li span {
+  width: 100px;
+}
+.introduce_info ul li strong {
+  margin-right: 6px;
+}
 .introduce_skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
-.chart {
-  float: left; width: 33.33%; height: 230px; text-align: center;
-}
-.chart span.title {
-  position: relative; 
-  display: block; 
-  width: 100%; 
-  text-align: center; 
-  top: 110px;
+.introduce_chart {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 33.33%; 
+  text-align: center;
 }
 .introduce_img {
   border-radius: 10px;
   box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+}
+.introduce_img img {
+  width: 400px;
 }
 @media screen and (max-width: 700px) {
   .introduce .wrapper {
@@ -208,7 +223,7 @@ body {
 .project {
   height: 100%;
   padding: 150px 0;
-  background-color: #fff;
+  background-color: #000;
 }
 .project .wrapper {
   max-width: 1400px;
@@ -218,11 +233,12 @@ body {
 }
 .project_head h3 {
   margin-bottom: 15px;
-  font-size: 44px;
-  font-weight: 500;
-}
-.project_head .description {
-  font-size: 18px;
+  font-weight: bold;
+  font-size: clamp(1.6rem, 10.5vw, 94px);
+  color: #cbe0ff;
+  text-shadow: -10px 10px 0 rgba(255, 255, 255, 0.25);
+  z-index: 2; 
+  pointer-events: none;
 }
 
 
@@ -232,8 +248,9 @@ body {
   justify-content: space-between;
 }
 .item_img {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
+  transition: all 0.3s ease-in-out;
 }
 .bg_item {
   width: 100%;
@@ -250,51 +267,41 @@ body {
   border-radius: 10px;
   color: #fff;
   box-shadow: 0px 0px 10px -3px rgb(68, 68, 68, 0.4);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   counter-increment: item-counter;
   box-sizing: border-box;
 }
-
 .item_info {
-  width: calc(100% - 340px);
+  width: calc(100% - 540px);
   padding-bottom: 10px;
 }
 .item_info h3 {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: bold;
-}
-.item_info p {
-  margin-bottom: 70px;
-  font-size: 20px;
-  color: #292929;
-}
-
-.btn-group {
-  display: flex;
-  align-items: center;
-}
-.btn-group a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 40px;
-  padding: 10px;
-  background-color: #2079ff;
-  border: 1px solid #2079ff;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 400;
   color: #fff;
-  line-height: 1;
-  box-sizing: border-box;
 }
-.btn-group .btn_source {
-  margin-right: 5px;
-  background-color: #fff;
-  color: #2079ff;
+.item_description {
+  margin-bottom: 80px;
+}
+.item_description p {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #fff;
+}
+.item_description p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .item_img {
+    width: 400px;
+    height: 400px;
+  }
+  .item_info {
+    width: calc(100% - 430px);
+    padding-bottom: 10px;
+  }
 }
 @media (max-width: 768px) {
   .item {
@@ -314,12 +321,67 @@ body {
     margin-bottom: 20px;
   }
 }
-
-
-
-
-
-
+.item_btn {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+.item_btn .btn-group:first-child {
+  margin-right: 15px;
+}
+.btn-group {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+.btn-group:hover .btn-inner {
+  top: -4px;
+  transform: scale(1, 1);
+  cursor: pointer;      
+} 
+.btn-group_inner {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid #cbe0ff;
+}
+.btn-group_inner:before,
+.btn-group_inner:after {
+  content: "";
+  position: absolute;
+  left: 2%;
+  bottom: -8px;
+  width: 96%;
+  border-bottom: 2px solid #cbe0ff;
+}
+.btn-group_inner:after {
+  width: 92%;
+  left: 4%;
+  bottom: -14px;
+}
+.btn-inner {
+  position: absolute;
+  top: 20px;
+  left: -2.1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104.2%;
+  height: 100%;
+  border: 2px solid #cbe0ff;
+  background: #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  transform: scale(.96, .96);
+  transition: all .3s;
+  box-sizing: border-box;
+  z-index: 4;
+}
+.btn-inner a {
+  text-decoration: none;
+  color: #cbe0ff;
+}
 
 
 

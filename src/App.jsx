@@ -16,10 +16,25 @@ function App() {
     AOS.init({duration: 1200,});
   }, []);
 
+  const [scrolled, setScrolled] = useState(false);
+  const [scrollThreshold, setScrollThreshold] = useState(200); // 사용자가 정하는 스크롤 위치 값
+
+  // 스크롤 이벤트 처리 함수
+  const handleScroll = () => {
+    setScrolled(window.scrollY >= scrollThreshold);
+  };
+
+  // 컴포넌트가 마운트되거나 업데이트될 때 스크롤 이벤트 리스너를 등록/해제합니다.
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollThreshold]);
 
   return (
-    <div className="WRAP">
-      <header id='header'>
+    <div id="WRAP">
+      <header id='header' className={scrolled ? 'down' : ''}>
         <Header />
         <MobileMenu />
       </header>
