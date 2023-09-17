@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react'
-import Header from './components/header'
+import Header from './components/Header'
 import Banner from './components/Banner'
 import Introduce from './components/Introduce'
 import Project from './components/Project'
@@ -17,20 +17,29 @@ function App() {
   }, []);
 
   const [scrolled, setScrolled] = useState(false);
-  const [scrollThreshold, setScrollThreshold] = useState(200); // 사용자가 정하는 스크롤 위치 값
+  const [scrollHeader, setScrollHeader] = useState({
+    initial: 200,
+    additional: 1500, // 추가된 부분
+  });
 
   // 스크롤 이벤트 처리 함수
   const handleScroll = () => {
-    setScrolled(window.scrollY >= scrollThreshold);
+    setScrolled(window.scrollY >= scrollHeader.initial);
+
+    if (window.scrollY >= scrollHeader.additional) {
+      document.getElementById('header').classList.add('scrolled--main');
+    } else {
+      document.getElementById('header').classList.remove('scrolled--main');
+    }
   };
 
-  // 컴포넌트가 마운트되거나 업데이트될 때 스크롤 이벤트 리스너를 등록/해제합니다.
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollThreshold]);
+  }, [scrollHeader]);
 
   return (
     <div id="WRAP">

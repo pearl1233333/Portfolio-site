@@ -7,7 +7,7 @@ function Header() {
     <>
       <div className='wrapper'>
         <div className='logo'>
-          <h1>LOGO</h1>
+          <h1>PEARL</h1>
         </div>
         <nav className='nav--menu'>
           <ul>

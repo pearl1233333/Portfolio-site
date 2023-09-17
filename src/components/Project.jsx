@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
 
 function Project() {
 
   
   return (
-    <section className="project">
+    <section id="project">
       <div className="wrapper">
         <div className="project_head">
           <h3 data-aos="fade-up-right">PROJECT</h3>
@@ -28,15 +29,20 @@ function Project() {
               <div className='item_btn'>
                 <div className='btn-group'>
                   <div className='btn-group_inner'>
-                    <div class="btn-inner">
-                      <a href="#" className='btn_github'>깃허브</a>
+                    <div className="btn-inner">
+                    <Link 
+                        to="https://github.com/roalwh/Project-OMDB-Public" 
+                        className='btn_github'>깃허브</Link>
                     </div>
                   </div>
                 </div>
                 <div className='btn-group'>
                   <div className='btn-group_inner'>
-                    <div class="btn-inner">
-                      <a href="#" className='btn_source'>소스</a>
+                    <div className="btn-inner">
+                      <Link 
+                        to="http://roalwh.iptime.org:20108/" 
+                        target="_blank"
+                        className='btn_source'>소스</Link>
                     </div>
                   </div>
                 </div>
