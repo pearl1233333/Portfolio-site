@@ -49,10 +49,10 @@ function BgText() {
     <div>
       <div>
         <div className="scroll-text first" data-speed="1.3">
-          <p data-speed="auto">text1</p>
+          <p data-speed="auto">WEB</p>
         </div>
         <div className="scroll-text second" data-speed="1.5">
-          <p data-speed="auto">text2</p>
+          <p data-speed="auto">Dev</p>
         </div>
       </div>
     </div>

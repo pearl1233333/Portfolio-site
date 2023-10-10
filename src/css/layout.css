@@ -26,24 +26,31 @@
   transition-duration: 0.6s;
   transition-timing-function: ease;
 }
-#header.scrolled--main {
-  background-color: rgb(0, 0, 0, .2);
-  -webkit-transition-duration: 0.6s;
-  -webkit-transition-timing-function: ease;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
-}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 .logo h1 {
-  font-family: 'KCC-Ganpan';
+  font-family: 'yg-jalnan';
   font-size: 24px;
   color: #333;
   -webkit-animation: revealNav 1800ms cubic-bezier(0.19, 1, 0.22, 1) both;
           animation: revealNav 1800ms cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+#header.scrolled--main {
+  background-color: rgb(0, 0, 0, .4);
+  -webkit-transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+#header.scrolled--main .logo h1 {
+  color: #fff;
+}
+#header.scrolled--main .nav--menu li a {
+  color: #fff;
 }
 @keyframes revealNav {
   from {
