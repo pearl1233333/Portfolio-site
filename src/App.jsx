@@ -18,8 +18,8 @@ function App() {
 
   const [scrolled, setScrolled] = useState(false);
   const [scrollHeader, setScrollHeader] = useState({
-    initial: 200,
-    additional: 1500, // 추가된 부분
+    initial: 100,
+    additional: 1500, 
   });
 
   // 스크롤 이벤트 처리 함수

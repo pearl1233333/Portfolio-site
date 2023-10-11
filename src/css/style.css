@@ -184,21 +184,33 @@ body {
   line-height: 1.35rem;
 }
 .introduce_info ul li .label {
-  min-width: 70px;
-  margin-right: 15px
+  min-width: 60px;
+  margin-right: 15px;
+  font-weight: 500;
+  color: #222;
 }
 .introduce_info ul li .label span {
   display: block;
   width: 100%;
-  text-align: center;
-  padding: 2px 6px;
-  background-color: rgb(255, 255, 255,0.3);
-  color: #212121;
-  border-radius: 3px;
-  font-size: 14px;
+  font-size: 15px;
   box-sizing: border-box;
 }
+.introduce_info ul li .text {
+  position: relative;
+  padding-left: 15px;
+}
 
+.introduce_info ul li .text::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #444;
+}
 .introduce_info ul li strong {
   margin-right: 8px;
   font-size: 15px;
@@ -323,36 +335,19 @@ body {
 }
 .item_img {
   width: 500px;
-  height: 500px;
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-
-.bg_item {
+.item_img img {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  grid-column-start: auto;
-  grid-row-start: auto;
-  background: url('https://images.khan.co.kr/article/2019/11/03/l_2019110302000086500015273.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  color: #333;
-  box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.06)
-    , 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  counter-increment: item-counter;
-  box-sizing: border-box;
 }
 .item_info {
   width: calc(100% - 540px);
   padding-bottom: 10px;
 }
-
 .item_info_title {
   margin-bottom: 20px;
   line-height: 1.2rem;
@@ -439,23 +434,27 @@ body {
 .item_technic .jpa {
   background-color: #24b300;
 }
+.item_technic .vercel {
+  background-color: #151515;
+}
 @media (max-width: 1200px) {
   .item_img {
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    border-radius: 7px;
   }
   .item_info {
-    width: calc(100% - 430px);
-    padding-bottom: 10px;
+    width: calc(100% - 460px);
+    padding-bottom: 0;
   }
 }
 @media (max-width: 768px) {
-  .item {
+  .project_item {
     display: block;
   }
   .item_img {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 70%;
+    margin: 0 auto 40px;
+    border-radius: 4px;
   }
   .item_info {
     width: 100%;
@@ -472,7 +471,15 @@ body {
     margin-bottom: 30px;
   }
 }
-
+@media (max-width: 480px) {
+  .project_item {
+    margin-bottom: 80px;
+  }
+  .item_img {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+}
 
 /* 버튼 */
 .item_btn {
@@ -506,14 +513,14 @@ body {
 .btn-group_inner:after {
   content: "";
   position: absolute;
-  left: 2%;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -8px;
   width: 96%;
   border-bottom: 2px solid #333;
 }
 .btn-group_inner:after {
   width: 92%;
-  left: 4%;
   bottom: -14px;
 }
 .btn-inner {
@@ -546,23 +553,67 @@ body {
   font-size: 18px;
   color: #333;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .btn-group {
     position: relative;
-    width: 100px;
-    height: 50px;
+    width: 152px;
+    height: 80px;
   }
   .btn-group_inner {
-    height: 50px;
+    height: 60px;
+  }
+  .btn-group_inner:before,
+  .btn-group_inner:after {
+    bottom: -13px;
+    width: 70%;
+  }
+  .btn-group_inner:after {
+    width: 84%;
+    bottom: -7px;
+  }
+}
+@media (max-width: 768px) {
+  .item_btn {
+    justify-content: center;
+  }
+  .btn-group {
+    width: 180px;
   }
   .btn-inner a {
     font-size: 16px;
+  }
+  .btn-group:hover .btn-inner {
+    position: inherit;
+    transform: none;  
+    top: inherit;  
+  }
+  .btn-group_inner {
+    position: inherit;
+    border: none;
+    height: 60px;
+  }
+  .btn-group_inner:before,
+  .btn-group_inner:after {
+    display: none;
+  }
+  .btn-inner {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    transform: none;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
   .item_btn {
     margin-top: 30px;
   }
+  .btn-group {
+    width: 50%;
+  }
+  .item_btn .btn-group:first-child {
+    margin-right: 7px;
+}
 }
 
 

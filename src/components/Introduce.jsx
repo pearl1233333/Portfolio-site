@@ -69,7 +69,7 @@ function Introduce() {
                 <div className='text'>
                   1996.10.23 (28세)
                 </div>
-                </li>
+              </li>
               <li>
                 <div className='label'>
                   <span>주소지</span> 
@@ -90,9 +90,17 @@ function Introduce() {
                 <div className='label'>
                   <span>교육과정</span> 
                 </div>
-                <ol className='text'>
-                  <li><strong>2021.05</strong> 이젠아카데미 웹디자인&퍼블리셔 과정 수료</li>
-                  <li><strong>2023.09</strong> 더조은컴퓨터학원 AWS 웹 프로그래밍 풀스택 과정 수료</li>
+                <ol>
+                  <li className='text'><strong>2021.05</strong> 이젠아카데미 웹디자인&퍼블리셔 과정 수료</li>
+                  <li className='text'><strong>2023.09</strong> 더조은컴퓨터학원 AWS 웹 프로그래밍 풀스택 과정 수료</li>
+                  {/* <li>
+                    <span>2021.05</span> 
+                    <p>이젠아카데미 웹디자인&퍼블리셔 과정 수료</p>
+                  </li>
+                  <li>
+                    <span>2023.09</span>
+                    <p>더조은컴퓨터학원 AWS 웹 프로그래밍 풀스택 과정 수료</p>
+                  </li> */}
                 </ol>
               </li>
             </ul>

@@ -20,11 +20,8 @@
   padding: 0 20px;
 }
 #header.down {
-  background-color: rgb(255, 255, 255, .6);
-  -webkit-transition-duration: 0.6s;
-  -webkit-transition-timing-function: ease;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
+  background-color: rgb(255, 255, 255, .4);
+  backdrop-filter: blur(10px);
 }
 
 .wrapper {
@@ -40,7 +37,7 @@
           animation: revealNav 1800ms cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 #header.scrolled--main {
-  background-color: rgb(0, 0, 0, .4);
+  background-color: rgb(0, 0, 0, .3);
   -webkit-transition-duration: 0.6s;
   -webkit-transition-timing-function: ease;
   transition-duration: 0.6s;
