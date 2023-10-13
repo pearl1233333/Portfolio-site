@@ -1,8 +1,14 @@
-# React + Vite
+# 최진주 포트폴리오
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 프로젝트 : 개인 포트폴리오 사이트 <br />
+- 기획 및 제작 : 최진주 <br />
+- 제작기간 : 2023.09 ~ <br />
 
-Currently, two official plugins are available:
+## 🔗 링크
+https://choipearl.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ 기술
+
+![js](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![js](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
