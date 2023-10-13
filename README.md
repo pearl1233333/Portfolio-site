@@ -1,3 +1,3 @@
 # 🔵 최진주 포트폴리오
 
-작업 중
+https://choipearl.vercel.app/
