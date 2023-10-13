@@ -6,6 +6,7 @@ import Project from './components/Project'
 import Footer from './components/Footer'
 import MobileMenu from './components/MobileMenu'
 import BgText from './components/BgText'
+import Contact from './components/Contact'
 
 import './css/aos.css';
 import AOS from 'aos';
@@ -52,6 +53,7 @@ function App() {
         <BgText />
         <Introduce />
         <Project />
+        <Contact />
       </main>
       <Footer />
     </div>

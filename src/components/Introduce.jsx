@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import EasyPieChart from 'easy-pie-chart';
 
 function Introduce() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,31 +17,6 @@ function Introduce() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [isScrolled]);
-
-  useEffect(() => {
-    if (isScrolled) {
-      const charts = document.getElementsByClassName('introduce_chart');
-      Array.from(charts).forEach((chart) => {
-        const barColor = chart.dataset.barColor;
-        createChart(chart, barColor);
-      });
-    }
-  }, [isScrolled]);
-
-  function createChart(chartElement, barColor) {
-    new EasyPieChart(chartElement, {
-      barColor: barColor,
-      trackColor: '#fff',
-      scaleColor: 'transparent',
-      lineCap: 'round',
-      lineWidth: 10,
-      size: 100,
-      animate: 2000,
-      onStep: function(from, to, percent) {
-        this.el.querySelector('.percent').innerText = Math.round(percent);
-      }
-    });
-  }
 
   return (
     <section id="introduce">
@@ -72,27 +46,11 @@ function Introduce() {
               </li>
               <li>
                 <div className='label'>
-                  <span>주소지</span> 
-                </div>
-                <div className='text'>
-                  서울특별시 금천구 가산동
-                </div>
-              </li>
-              <li>
-                <div className='label'>
-                  <span>학력</span> 
-                </div>
-                <div className='text'>
-                  세명대학교 호텔관광경영학과 졸업
-                </div>
-              </li>
-              <li>
-                <div className='label'>
                   <span>교육과정</span> 
                 </div>
                 <ol>
-                  <li className='text'><strong>2021.05</strong> 이젠아카데미 웹디자인&퍼블리셔 과정 수료</li>
                   <li className='text'><strong>2023.09</strong> 더조은컴퓨터학원 AWS 웹 프로그래밍 풀스택 과정 수료</li>
+                  <li className='text'><strong>2021.05</strong> 이젠아카데미 웹디자인&퍼블리셔 과정 수료</li>
                   {/* <li>
                     <span>2021.05</span> 
                     <p>이젠아카데미 웹디자인&퍼블리셔 과정 수료</p>
@@ -103,72 +61,15 @@ function Introduce() {
                   </li> */}
                 </ol>
               </li>
+              <li>
+                <div className='label'>
+                  <span>학력</span> 
+                </div>
+                <div className='text'>
+                  세명대학교 호텔관광경영학과 졸업
+                </div>
+              </li>
             </ul>
-          </div>
-          <div 
-            className="introduce_skill"
-            data-aos="fade-right"
-          >
-            <div 
-              className="introduce_chart" 
-              data-bar-color="#729FE3"
-              data-percent="100"
-              >
-              <p className='skill_name'>
-                HTML&CSS 
-                <span>
-                  (<span className="percent"></span>%)
-                </span>
-              </p>
-            </div>
-            <div 
-              className="introduce_chart"
-              data-bar-color="#8996AB"
-              data-percent="60"
-            >
-              <p className='skill_name'>
-                JAVASCRIPT 
-                <span>
-                  (<span className="percent"></span>%)
-                </span>
-              </p>
-            </div>
-            <div 
-              className="introduce_chart" 
-              data-bar-color="#2F425E"
-              data-percent="70"
-            >
-              <p className='skill_name'>
-                React
-                <span>
-                  (<span className="percent"></span>%)
-                </span>
-              </p>
-            </div>
-            <div 
-              className="introduce_chart" 
-              data-bar-color="#2F425E"
-              data-percent="25"
-            >
-              <p className='skill_name'>
-                Vue
-                <span>
-                  (<span className="percent"></span>%)
-                </span>
-              </p>
-            </div>
-            <div 
-              className="introduce_chart"
-              data-bar-color="#8996AB"
-              data-percent="55"
-            >
-              <p className='skill_name'>
-                Git 
-                <span>
-                  (<span className="percent"></span>%)
-                </span>
-              </p>
-            </div>
           </div>
         </div>
         <div className="introduce_img" data-aos="fade-left">
