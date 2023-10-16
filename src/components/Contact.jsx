@@ -5,7 +5,7 @@ function Contact() {
     <section id="contact">
       <div className="wrapper">
       <div className="contact_head">
-        <h3 data-aos="fade-up-right">Contact</h3>
+        <h3 data-aos="fade-up-right">CONTACT</h3>
       </div>
       <div className="contact_body" data-aos="fade-up-right">
         <form action="">
@@ -49,6 +49,17 @@ function Contact() {
               class="form_message"
               placeholder="내용을 입력해주세요."
             ></textarea>
+          </div>
+          <div className="form_btn">
+            <button
+              type="submit"
+              className="btn_submit"
+            >
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">보내기</span>
+          </button>
           </div>
         </form>
       </div>

@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
 }
 
+#root {
+  overflow: hidden;
+}
 
 /* ------------------------------
             메인배너 
@@ -124,35 +127,6 @@ body {
   }
 }
 
-/* 메인 스크롤 텍스트 */
-.smooth-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.scroll-text {
-  position: absolute;
-}
-.scroll-text p {
-  font-family: "wild_worldbold";
-  font-size: clamp(3rem, 10.5vw, 120px);
-  text-align: center;
-  color: transparent;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: rgba(2, 2, 2, 0.7);
-  z-index: -10;
-}
-.scroll-text.first {
-  bottom: -5%;
-  left: -5%;
-}
-.scroll-text.second {
-  bottom: -35%;
-  right: -5%;
-}
-
-
-
 /* ------------------------------
               소개 
 ------------------------------- */
@@ -245,35 +219,42 @@ body {
   .introduce_img img {
     width: 100%;
   }
+  .introduce_title p {
+    font-size: 18px;
+  }
   .introduce_text {
     width: 100%;
     margin-bottom: 50px;
     margin-right: 0;
   }
-  .introduce_skill {
-    margin-top: 30px;
-  }
-  .skill_name {
-    font-size: 14px;
-  }
+  
 }
 @media screen and (max-width: 480px) {
   #introduce {
-    padding: 120px 0 40px;
+    padding: 20px 0 40px;
   }
   .introduce_text {
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+  .introduce_title p {
+    font-size: 16px;
+  }
+  .introduce_title p br {
+    display: none !important;
   }
   .introduce_info ul li {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 14px;
   }
   .introduce_info ul li .label {
     display: inline-block;
     min-width: auto;
     margin-right: 7px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+  }
+  .introduce_info ul li .label span {
+    font-size: 14px;
   }
   .introduce_info ul li .text {
     padding-left: 6px;
@@ -283,16 +264,6 @@ body {
   }
   .introduce_info ol li {
     margin-bottom: 0;
-  }
-  .introduce_skill {
-    margin-top: 30px;
-  }
-  .skill_name > span {
-    display: block;
-  }
-  .introduce_chart canvas {
-    width: 70px !important;
-    height: 70px !important;
   }
 }
 
@@ -326,29 +297,29 @@ body {
   justify-content: space-between;
   margin-bottom: 140px;
 }
-.item_img {
+.item_image {
   width: 500px;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-.item_img img {
+.item_image img {
   width: 100%;
   height: 100%;
 }
-.item_info {
+.item_cont {
   width: calc(100% - 540px);
   padding-bottom: 10px;
 }
-.item_info_title {
+.item_title {
   margin-bottom: 20px;
   line-height: 1.2rem;
   font-size: 32px;
   font-weight: bold;
   color: #333;
 }
-.item_info_title span {
+.item_title span {
   font-size: 18px;
 }
 .item_description {
@@ -431,11 +402,11 @@ body {
   background-color: #151515;
 }
 @media (max-width: 1200px) {
-  .item_img {
+  .item_image {
     width: 430px;
     border-radius: 7px;
   }
-  .item_info {
+  .item_cont {
     width: calc(100% - 460px);
     padding-bottom: 0;
   }
@@ -444,34 +415,73 @@ body {
   .project_item {
     display: block;
   }
-  .item_img {
+  .item_image {
     width: 70%;
     margin: 0 auto 40px;
     border-radius: 4px;
   }
-  .item_info {
+  .item_cont {
     width: 100%;
   }
-  .item_info h3 {
+  .item_title {
     margin-bottom: 10px;
     font-size: 24px;
-  }
-  .item_info p {
-    margin-bottom: 20px;
-    font-size: 16px;
   }
   .item_description {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 480px) {
+  .project_head {
+    margin-bottom: 40px;
+  }
+  .project_head h3 {
+    text-shadow: 5px 5px 0 rgba(203, 224, 255, 0.7);
+  }
   .project_item {
     margin-bottom: 80px;
   }
-  .item_img {
+  .item_image {
     width: 100%;
     margin: 0 auto 30px;
   }
+}
+
+/* 퍼블리싱 프로젝트 */
+.project_card {
+  display: block;
+}
+.project_card_title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.project_card_list {
+  display: flex;
+  align-items: center;
+  margin: -1%;
+}
+.card_inner {
+  width: 33%;
+  height: 15rem;
+  padding: 25px;
+  margin: 1%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #444;
+  box-sizing: border-box;
+}
+.card_text {
+  display: none;
+}
+.card_title {
+  color: #fff;
+}
+.card_desc {
+  font-size: 14px;
+  color: #fff;
+}
+.card_inner:hover .card_text {
+  display: block;
 }
 
 /* 버튼 */
@@ -611,13 +621,14 @@ body {
 
 /* Contact */
 #contact {
-  padding: 50px 0;
+  padding: 50px 0 80px;
 }
 .contact_head {
   margin-bottom: 50px;
 }
 .contact_head h3 {
   margin-bottom: 15px;
+  text-align: center;
   font-weight: 900;
   font-size: clamp(1.8rem, 10.5vw, 92px);
   color: #333;
@@ -647,7 +658,7 @@ body {
   width: 70px;
   height: 36px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: #333;
 }
 .form_input {
@@ -671,7 +682,85 @@ body {
   resize: none;
   box-sizing: border-box;
 }
+.form_btn {
+  height: 48px;
+  text-align: center;
+}
 
+.btn_submit {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn_submit .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  background: #282936;
+  border-radius: 24px;
+}
+
+.btn_submit .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.btn_submit .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 12px;
+  width: 16px;
+  height: 0.15rem;
+  background: none;
+}
+
+.btn_submit .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -5px;
+  right: 1px;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
+.btn_submit .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn_submit:hover .circle {
+  width: 100%;
+}
+.btn_submit:hover .circle .icon.arrow {
+  
+  background-color: #fff;
+  transform: translate(1rem, 0);
+}
+.btn_submit:hover .button-text {
+  color: #fff;
+}
 @media (max-width: 768px) {
   .contact_body {
     max-width: 100%;

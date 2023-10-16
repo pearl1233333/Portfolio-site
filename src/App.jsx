@@ -5,9 +5,7 @@ import Introduce from './components/Introduce'
 import Project from './components/Project'
 import Footer from './components/Footer'
 import MobileMenu from './components/MobileMenu'
-import BgText from './components/BgText'
 import Contact from './components/Contact'
-
 import './css/aos.css';
 import AOS from 'aos';
 
@@ -50,7 +48,6 @@ function App() {
       </header>
       <main>
         <Banner />
-        <BgText />
         <Introduce />
         <Project />
         <Contact />
