@@ -483,6 +483,16 @@ body {
 .card_inner:hover .card_text {
   display: block;
 }
+@media (max-width: 480px) {
+  .project_card_list {
+    display: block;
+    margin: 0;
+  }
+  .card_inner {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 /* 버튼 */
 .item_btn {
@@ -744,7 +754,7 @@ body {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #333;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -754,7 +764,6 @@ body {
   width: 100%;
 }
 .btn_submit:hover .circle .icon.arrow {
-  
   background-color: #fff;
   transform: translate(1rem, 0);
 }
@@ -782,8 +791,38 @@ body {
     border-radius: 3px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .contact_body {
     padding: 20px;
+  }
+  .contact_head h3 {
+    text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.9);
+  }
+  .form_btn {
+    height: 100%;
+  }
+  .btn_submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 21px;
+  }
+  .btn_submit .circle {
+    display: none;
+  }
+  .btn_submit .circle .icon.arrow {
+    display: none;
+  }
+  .btn_submit .button-text {
+    position: inherit;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  }
+  .btn_submit:hover .button-text {
+    color: #fff;
   }
 }

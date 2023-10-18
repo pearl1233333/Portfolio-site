@@ -46,7 +46,7 @@ function Contact() {
               id="" 
               cols="30" 
               rows="10" 
-              class="form_message"
+              className="form_message"
               placeholder="내용을 입력해주세요."
             ></textarea>
           </div>
@@ -55,10 +55,10 @@ function Contact() {
               type="submit"
               className="btn_submit"
             >
-            <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
+            <span className="circle" aria-hidden="true">
+              <span className="icon arrow"></span>
             </span>
-            <span class="button-text">보내기</span>
+            <span className="button-text">보내기</span>
           </button>
           </div>
         </form>
