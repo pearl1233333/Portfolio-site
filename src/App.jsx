@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import Header from './components/Header'
-import Banner from './components/Banner'
-import Introduce from './components/Introduce'
+import Home from './components/Home'
+import About from './components/About'
 import Project from './components/Project'
 import Footer from './components/Footer'
 import MobileMenu from './components/MobileMenu'
@@ -47,8 +47,8 @@ function App() {
         <MobileMenu />
       </header>
       <main>
-        <Banner />
-        <Introduce />
+        <Home />
+        <About />
         <Project />
         <Contact />
       </main>

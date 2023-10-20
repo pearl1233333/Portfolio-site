@@ -1,12 +1,12 @@
 import react from 'react'
 
-function Banner() {
+function Home() {
 
   const listHTML = "The spectacle<br />before us was<br />indeed <span className='title-name'>sublime</span>";
   const listItems = listHTML.split("<br />");
 
   return (
-    <section className="main_banner">
+    <section id="home">
       <div className="main_title">
         <div className="main_title_inner">
           {listItems.map((line, i) => (
@@ -20,4 +20,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Home

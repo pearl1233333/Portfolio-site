@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Introduce() {
+function About() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,11 +19,11 @@ function Introduce() {
   }, [isScrolled]);
 
   return (
-    <section id="introduce">
+    <section id="about">
       <div className="wrapper">
-        <div className="introduce_text">
+        <div className="about_text">
           <div 
-            className="introduce_title"
+            className="about_title"
             data-aos-once="true">
             <p data-aos="fade-left">
               안녕하세요. 프론트엔드개발자 최진주입니다🖐 <br />
@@ -31,7 +31,7 @@ function Introduce() {
               어떻게 하면 좋은 코드를 짤 수 있을지 고민하고 설계하려고 합니다.
             </p>
           </div>
-          <div className="introduce_info"
+          <div className="about_info"
             data-aos-once="true"
           >
             <ul
@@ -72,7 +72,7 @@ function Introduce() {
             </ul>
           </div>
         </div>
-        <div className="introduce_img" data-aos="fade-left">
+        <div className="about_img" data-aos="fade-left">
           <img src="https://image.mediapen.com/news/202103/news_605667_1614652226_m.jpg" alt="" />
         </div>
       </div>
@@ -80,4 +80,4 @@ function Introduce() {
   )
 }
 
-export default Introduce
+export default About

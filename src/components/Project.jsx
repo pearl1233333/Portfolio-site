@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import Banner01 from "../images/img_project1.jpg"
 import Banner02 from "../images/img_project2.png"
+import subProject1 from "../images/img_publishing_project1.jpg"
+import subProject2 from "../images/img_publishing_project2.jpg"
+import subProject3 from "../images/img_publishing_project3.jpg"
+import subProject4 from "../images/img_publishing_project4.jpg"
 
 function Project() {
 
@@ -55,6 +59,7 @@ function Project() {
                     <div className="btn-inner">
                     <Link 
                         to="https://github.com/roalwh/Project-OMDB-Public" 
+                        target="_blank"
                         className='btn_github'>깃허브</Link>
                     </div>
                   </div>
@@ -107,6 +112,7 @@ function Project() {
                     <div className="btn-inner">
                     <Link 
                         to="https://github.com/pearl1233333/weather-app.git" 
+                        target="_blank"
                         className='btn_github'>깃허브</Link>
                     </div>
                   </div>
@@ -158,6 +164,7 @@ function Project() {
                     <div className="btn-inner">
                     <Link 
                         to="https://github.com/pearl1233333/simplediary.git" 
+                        target="_blank"
                         className='btn_github'>깃허브</Link>
                     </div>
                   </div>
@@ -179,10 +186,71 @@ function Project() {
             <h2 className='project_card_title'>퍼블리싱 프로젝트</h2>
             <div className='project_card_list'>
               <div className='card_inner'>
-                <div className='card_text'>
-                <h3 className='card_title'>클리오</h3>
-                <p className='card_desc'>모바일 페이지 퍼블리싱</p>
-                </div>
+                <Link
+                  to="https://clubclio.co.kr/"
+                >
+                  <div className="card_image" style={{ backgroundImage: `url(${subProject1})` }}>
+                  </div>
+                  <div className='card_infos'>
+                    <h3 className='info_title'>클리오 공식몰 구축</h3>
+                    <p className='info_desc'>
+                      모바일 페이지 퍼블리싱 <br />
+                      상세, 결제, 회원가입, 마이페이지를 담당하였습니다.
+                    </p>
+                    <p className='info_cate'>HTML, CSS, JS</p>
+                  </div>
+                </Link>
+              </div>
+              <div className='card_inner'>
+                <Link
+                  to="https://www.hancomtaja.com/"
+                  target="_blank"
+                >
+                  <div className="card_image" style={{ backgroundImage: `url(${subProject2})` }}>
+                  </div>
+                  <div className='card_infos'>
+                    <h3 className='info_title'>
+                      한글과컴퓨터 타자연습사이트 리뉴얼 및 타자연습게임, 필사, 멀티게임 구축</h3>
+                    <p className='info_desc'>
+                      웹 사이트 반응형 퍼블리싱 <br />
+                    </p>
+                    <p className='info_cate'>HTML, CSS, JS</p>
+                    
+                  </div>
+                </Link>
+              </div>
+              <div className='card_inner'>
+                <Link
+                  to="https://www.kotsa.or.kr/edrone/"
+                  target="_blank"
+                >
+                  <div className="card_image" style={{ backgroundImage: `url(${subProject3})` }}>
+                  </div>
+                  <div className='card_infos'>
+                    <h3 className='info_title'>한국교통안전공단 드론 정보통합시스템</h3>
+                    <p className='info_desc'>
+                      유지보수 및 QA를 담당하였습니다.
+                    </p>
+                    <p className='info_cate'>HTML, CSS, JS</p>
+                  </div>
+                </Link>
+              </div>
+              <div className='card_inner'>
+                <Link
+                  to="http://bnbcompany.io/"
+                  target="_blank"
+                >
+                  <div className="card_image" style={{ backgroundImage: `url(${subProject4})` }}>
+                  </div>
+                  <div className='card_infos'>
+                    <h3 className='info_title'>비엔비컴퍼니 웹사이트 구축</h3>
+                    <p className='info_desc'>
+                      자사 반응형 웹사이트 퍼블리싱 담당하였습니다.
+                    </p>
+                    <p className='info_cate'>HTML, CSS, JS</p>
+                    
+                  </div>
+                </Link>
               </div>
             </div>
           </article>
