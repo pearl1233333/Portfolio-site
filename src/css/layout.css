@@ -275,7 +275,11 @@
   background-position: center;
   background-size: 100%;
 }
-
+@media (max-width: 480px) {
+  #footer .copyright {
+    font-size: 12px;
+  }
+}
 
 
 

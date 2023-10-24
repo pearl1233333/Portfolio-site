@@ -497,7 +497,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 50px 45px;
+  padding: 30px 35px;
   box-sizing: border-box;
   opacity: 0;
   -webkit-transition: 0.3s ease-in-out;
@@ -756,79 +756,77 @@ body {
   height: 48px;
   text-align: center;
 }
-
 .btn_submit {
-  position: relative;
-  display: inline-block;
   width: 140px;
   cursor: pointer;
-  background: transparent;
 }
-
-.btn_submit .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 48px;
-  height: 48px;
-  background: #282936;
-  border-radius: 24px;
-}
-
-.btn_submit .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
-}
-
-.btn_submit .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 12px;
-  width: 16px;
-  height: 0.15rem;
-  background: none;
-}
-
-.btn_submit .circle .icon.arrow::before {
-  position: absolute;
-  content: '';
-  top: -5px;
-  right: 1px;
-  width: 10px;
-  height: 10px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
-  transform: rotate(45deg);
-}
-
-.btn_submit .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: #333;
-  font-weight: 700;
-  line-height: 1.6;
-  text-align: center;
-  text-transform: uppercase;
-}
-.btn_submit:hover .circle {
-  width: 100%;
-}
-.btn_submit:hover .circle .icon.arrow {
-  background-color: #fff;
-  transform: translate(1rem, 0);
-}
-.btn_submit:hover .button-text {
-  color: #fff;
+@media screen and (min-width:768px) {
+  .btn_submit {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+  }
+  .btn_submit .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .btn_submit .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    background: #282936;
+    border-radius: 24px;
+  }
+  .btn_submit .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  .btn_submit .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 12px;
+    width: 16px;
+    height: 0.15rem;
+    background: none;
+  }
+  .btn_submit .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    right: 1px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+  }
+  .btn_submit:hover .circle {
+    width: 100%;
+  }
+  .btn_submit:hover .circle .icon.arrow {
+    background-color: #fff;
+    transform: translate(1rem, 0);
+  }
+  .btn_submit:hover .button-text {
+    color: #fff;
+  }
 }
 @media (max-width: 768px) {
   .contact_body {
@@ -850,6 +848,18 @@ body {
     min-height: 200px;
     border-radius: 3px;
   }
+  .btn_submit {
+    height: 42px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 21px;
+  }
+  .btn_submit .button-text {
+    position: inherit;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  }
 }
 @media (max-width: 480px) {
   .contact_body {
@@ -860,29 +870,5 @@ body {
   }
   .form_btn {
     height: 100%;
-  }
-  .btn_submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 42px;
-    margin: 0 auto;
-    background-color: #333;
-    border-radius: 21px;
-  }
-  .btn_submit .circle {
-    display: none;
-  }
-  .btn_submit .circle .icon.arrow {
-    display: none;
-  }
-  .btn_submit .button-text {
-    position: inherit;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-  }
-  .btn_submit:hover .button-text {
-    color: #fff;
   }
 }

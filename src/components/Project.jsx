@@ -183,9 +183,12 @@ function Project() {
             </div>
           </article>
           <article className='project_card'>
-            <h2 className='project_card_title'>퍼블리싱 프로젝트</h2>
+            <h2 
+              className='project_card_title'
+              data-aos="fade-down"
+            >퍼블리싱 프로젝트</h2>
             <div className='project_card_list'>
-              <div className='card_inner'>
+              <div className='card_inner' data-aos="fade-up">
                 <Link
                   to="https://clubclio.co.kr/"
                 >
@@ -201,7 +204,7 @@ function Project() {
                   </div>
                 </Link>
               </div>
-              <div className='card_inner'>
+              <div className='card_inner' data-aos="fade-up">
                 <Link
                   to="https://www.hancomtaja.com/"
                   target="_blank"
@@ -219,7 +222,7 @@ function Project() {
                   </div>
                 </Link>
               </div>
-              <div className='card_inner'>
+              <div className='card_inner' data-aos="fade-up">
                 <Link
                   to="https://www.kotsa.or.kr/edrone/"
                   target="_blank"
@@ -235,7 +238,7 @@ function Project() {
                   </div>
                 </Link>
               </div>
-              <div className='card_inner'>
+              <div className='card_inner' data-aos="fade-up">
                 <Link
                   to="http://bnbcompany.io/"
                   target="_blank"
