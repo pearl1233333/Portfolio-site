@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
+import person from "../images/img_person.jpg" 
 
 function About() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,9 +72,17 @@ function About() {
               </li>
             </ul>
           </div>
+          <div 
+            className='about_btn'
+            data-aos="fade-left"
+          >
+            <a href="../public/application_ver_01.pdf" target="_blank">
+              입사지원서 보기
+            </a>
+          </div>
         </div>
         <div className="about_img" data-aos="fade-left">
-          <img src="https://image.mediapen.com/news/202103/news_605667_1614652226_m.jpg" alt="" />
+          <img src={person} alt="" />
         </div>
       </div>
     </section>

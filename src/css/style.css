@@ -85,6 +85,7 @@ body {
   position: relative;
   display: block;
   overflow: hidden;
+  color: #444;
 }
 .title-line {
   display: inline-block;
@@ -138,6 +139,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  max-width: 1000px;
 }
 .about_text {
   margin-top: 30px;
@@ -176,7 +178,6 @@ body {
   position: relative;
   padding-left: 15px;
 }
-
 .about_info ul li .text::before {
   position: absolute;
   left: 0;
@@ -193,12 +194,27 @@ body {
   color: #333;
   font-weight: 500;
 }
+.about_btn {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.about_btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 170px;
+  padding: 15px 10px;
+  background-color: #222;
+  border-radius: 0px;
+  color: #fff;
+}
 .about_img {
   border-radius: 10px;
   box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
 }
 .about_img img {
-  width: 400px;
+  width: 340px;
 }
 @media screen and (max-width: 768px) {
   #about {
@@ -208,6 +224,10 @@ body {
     justify-content: center;
     flex-direction: column-reverse;
     ;
+  }
+  .about_img {
+    width: 60%;
+    margin: 0 auto;
   }
   .about_img img {
     width: 100%;
@@ -220,7 +240,6 @@ body {
     margin-bottom: 50px;
     margin-right: 0;
   }
-  
 }
 @media screen and (max-width: 480px) {
   #about {
@@ -258,6 +277,12 @@ body {
   .about_info ol li {
     margin-bottom: 0;
   }
+  .about_btn a {
+    font-size: 14px;
+  }
+  .about_img {
+    width: 100%;
+  }
 }
 
 
@@ -266,11 +291,11 @@ body {
 ------------------------------- */
 #project {
   height: 100%;
-  padding: 70px  0 110px;
+  padding: 100px  0 110px;
   background-color: #fff;
 }
 .project_head {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .project_head h3 {
   margin-bottom: 15px;
@@ -290,7 +315,7 @@ body {
 .item_image {
   width: 500px;
   border: 1px solid #bfbfbf;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -393,11 +418,11 @@ body {
 }
 @media (max-width: 1200px) {
   .item_image {
-    width: 430px;
+    width: 400px;
     border-radius: 7px;
   }
   .item_cont {
-    width: calc(100% - 460px);
+    width: calc(100% - 440px);
     padding-bottom: 0;
   }
 }
@@ -406,7 +431,7 @@ body {
     display: block;
   }
   .item_image {
-    width: 70%;
+    width: 100%;
     margin: 0 auto 40px;
     border-radius: 4px;
   }
@@ -432,8 +457,7 @@ body {
     margin-bottom: 80px;
   }
   .item_image {
-    width: 100%;
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -567,70 +591,70 @@ body {
   width: 200px;
   height: 100px;
 }
-.btn-group:hover .btn-inner {
-  top: -4px;
-  transform: scale(1, 1);
-  background-color: #333;
-  cursor: pointer;      
-} 
-.btn-group:hover .btn-inner a {
-  color: #fff;     
-} 
-.btn-group_inner {
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  border-bottom: 2px solid #333;
-}
-.btn-group_inner:before,
-.btn-group_inner:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -8px;
-  width: 96%;
-  border-bottom: 2px solid #333;
-}
-.btn-group_inner:after {
-  width: 92%;
-  bottom: -14px;
-}
-.btn-inner {
-  position: absolute;
-  top: 20px;
-  left: -2.1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 104.2%;
-  height: 100%;
-  border: 2px solid #333;
-  background: #fff;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transform: scale(.96, .96);
-  transition: all .3s;
-  box-sizing: border-box;
-  z-index: 4;
-}
-.btn-inner a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-family: 'Pretendard-Regular';
-  font-size: 18px;
-  color: #333;
+@media screen and (min-width:768px) {
+  .btn-group:hover .btn-inner {
+    top: -4px;
+    transform: scale(1, 1);
+    background-color: #333;
+    cursor: pointer;      
+  } 
+  .btn-group:hover .btn-inner a {
+    color: #fff;     
+  } 
+  .btn-group_inner {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #333;
+  }
+  .btn-group_inner:before,
+  .btn-group_inner:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 96%;
+    border-bottom: 2px solid #333;
+  }
+  .btn-group_inner:after {
+    width: 92%;
+    bottom: -14px;
+  }
+  .btn-inner {
+    position: absolute;
+    top: 20px;
+    left: -2.1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104.2%;
+    height: 100%;
+    border: 2px solid #333;
+    background: #fff;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: scale(.96, .96);
+    transition: all .3s;
+    box-sizing: border-box;
+    z-index: 4;
+  }
+  .btn-inner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    color: #333;
+  }
 }
 @media (max-width: 1200px) {
   .btn-group {
-    position: relative;
     width: 152px;
-    height: 80px;
   }
   .btn-group_inner {
     height: 60px;
@@ -651,30 +675,21 @@ body {
   }
   .btn-group {
     width: 180px;
+    height: 100%;
+    text-align: center;
   }
   .btn-inner a {
     font-size: 16px;
   }
-  .btn-group:hover .btn-inner {
-    position: inherit;
-    transform: none;  
-    top: inherit;  
-  }
   .btn-group_inner {
-    position: inherit;
-    border: none;
-    height: 60px;
-  }
-  .btn-group_inner:before,
-  .btn-group_inner:after {
-    display: none;
+    height: 100%;
   }
   .btn-inner {
-    position: inherit;
-    top: inherit;
-    left: inherit;
-    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 60px;
   }
 }
 @media (max-width: 480px) {
@@ -683,6 +698,17 @@ body {
   }
   .btn-group {
     width: 50%;
+    background-color: #333;
+    border-radius: 3px;
+  }
+  .btn-inner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
   }
   .item_btn .btn-group:first-child {
     margin-right: 7px;

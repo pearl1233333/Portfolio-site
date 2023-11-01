@@ -155,6 +155,7 @@ function Project() {
                   <ul className='item_technic'>
                     <li className='hmtl'>HTML5&CSS3</li>
                     <li className='react'>React</li>
+                    <li className='vercel'>Vercel</li>
                   </ul>
                 </div>           
               </div>
