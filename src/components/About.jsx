@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from "react-router-dom"
 import person from "../images/img_person.jpg" 
 
 function About() {
@@ -76,13 +77,15 @@ function About() {
             className='about_btn'
             data-aos="fade-left"
           >
-            <a href="../public/application_ver_01.pdf" target="_blank">
+            <Link 
+              to="../public/application_ver_01.pdf"
+              target="_blank">
               입사지원서 보기
-            </a>
+            </Link>
           </div>
         </div>
         <div className="about_img" data-aos="fade-left">
-          <img src={person} alt="" />
+          <img src={person} alt="최진주 증명사진" />
         </div>
       </div>
     </section>

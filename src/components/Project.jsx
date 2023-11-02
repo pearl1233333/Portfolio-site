@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import Banner01 from "../images/img_project1.jpg"
 import Banner02 from "../images/img_project2.png"
+import Banner03 from "../images/img_project3.jpg"
 import subProject1 from "../images/img_publishing_project1.jpg"
 import subProject2 from "../images/img_publishing_project2.jpg"
 import subProject3 from "../images/img_publishing_project3.jpg"
@@ -135,7 +136,7 @@ function Project() {
             data-aos-once="true"
           >
             <div className="item_image" data-aos="fade-right">
-              <img src={Banner01} alt="술렁술렁 메인 이미지" />
+              <img src={Banner03} alt="감정일기장 메인 이미지" />
             </div>
             <div className='item_cont' data-aos="fade-left">
               <h3 className='item_title'>감정일기장</h3>
