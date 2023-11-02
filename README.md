@@ -5,7 +5,7 @@
 - 제작기간 : 2023.09 ~ <br />
 
 ## 🔗 링크
-https://choipearl.vercel.app/
+https://www.choipearl.com/
 
 ## 🛠️ 기술
 
