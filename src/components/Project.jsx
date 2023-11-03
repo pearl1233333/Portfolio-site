@@ -36,7 +36,7 @@ function Project() {
                     <dt className='title'>담당</dt>
                     <dd><span>📍</span> 전체페이지 기획 및 설계</dd>
                     <dd><span>📍</span> 전체페이지 디자인&퍼블리싱 및 반응형</dd>
-                    <dd><span>📍</span> 메인페이지</dd>
+                    <dd><span>📍</span> 메인페이지 랜덤 추천 기능</dd>
                     <dd><span>📍</span> 전통주 전체·카테고리별 검색</dd>
                   </dl>
                 </div>
@@ -47,10 +47,6 @@ function Project() {
                     <li className='sass'>SASS</li>
                     <li className='js'>Javascript</li>
                     <li className='react'>React</li>
-                    <li className='maria'>Maria DB</li>
-                    <li className='java'>Java</li>
-                    <li className='sb'>SpringBoot</li>
-                    <li className='jpa'>JPA</li>
                   </ul>
                 </div>           
               </div>
@@ -71,7 +67,7 @@ function Project() {
                       <Link 
                         to="http://roalwh.iptime.org:20108/" 
                         target="_blank"
-                        className='btn_source'>소스</Link>
+                        className='btn_source'>사이트 바로가기</Link>
                     </div>
                   </div>
                 </div>
@@ -124,7 +120,7 @@ function Project() {
                       <Link 
                         to="https://weather-c4sdpz0rl-pearl1233333.vercel.app" 
                         target="_blank"
-                        className='btn_source'>소스</Link>
+                        className='btn_source'>사이트 바로가기</Link>
                     </div>
                   </div>
                 </div>
@@ -177,7 +173,7 @@ function Project() {
                       <Link 
                         to="http://simplediary.vercel.app" 
                         target="_blank"
-                        className='btn_source'>소스</Link>
+                        className='btn_source'>사이트 바로가기</Link>
                     </div>
                   </div>
                 </div>
@@ -217,7 +213,7 @@ function Project() {
                     <h3 className='info_title'>
                       한글과컴퓨터 타자연습사이트 리뉴얼 및 타자연습게임, 필사, 멀티게임 구축</h3>
                     <p className='info_desc'>
-                      웹 사이트 반응형 퍼블리싱 <br />
+                      메인페이지와 레이아웃을 제외한 전체페이지 퍼블리싱을 담당하였습니다.<br />
                     </p>
                     <p className='info_cate'>HTML, CSS, JS</p>
                     

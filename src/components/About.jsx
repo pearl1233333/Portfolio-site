@@ -29,8 +29,8 @@ function About() {
             data-aos-once="true">
             <p data-aos="fade-left">
               안녕하세요. 프론트엔드개발자 최진주입니다🖐 <br />
-              저는 사용자에 의한, 사용자를 위한 개발을 하고 있습니다. <br />
-              어떻게 하면 좋은 코드를 짤 수 있을지 고민하고 설계하려고 합니다.
+              저는 사용자를 위해 개발 하고 싶습니다. <br />
+              어떻게 하면 좋은 코드를 짤 수 있을지 고민하고 설계합니다.
             </p>
           </div>
           <div className="about_info"
