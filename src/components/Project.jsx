@@ -26,7 +26,7 @@ function Project() {
               <img src={Banner01} alt="술렁술렁 메인 이미지" />
             </div>
             <div className='item_cont' data-aos="fade-left">
-              <h3 className='item_title'>술렁술렁<span> _ 전통주 정보공유 웹 플랫폼 </span></h3>
+              <h3 className='item_title'>술렁술렁<span className='small'> _ 전통주 정보공유 웹 플랫폼 </span></h3>
               <div className='item_details'>
                 <div className='item_text'>
                   동기들과 진행한 파이널 프로젝트입니다. 술을 좋아하는 5명의 학생들이 모여 우리나라의 전통주를 널리 알리고자 만든 웹 사이트입니다.
@@ -86,7 +86,7 @@ function Project() {
               <img src={Banner02} alt="술렁술렁 메인 이미지" />
             </div>
             <div className='item_cont' data-aos="fade-left">
-              <h3 className='item_title'>날씨 앱<span> _ 전세계 날씨 정보 앱</span></h3>
+              <h3 className='item_title'>날씨 앱<span className='small'> _ 전세계 날씨 정보 앱</span></h3>
               <div className='item_details'>
                 <div className='item_text'>
                   OpenWeatherMap api를 활용해 만든 개인프로젝트입니다. 
@@ -139,7 +139,7 @@ function Project() {
               <img src={Banner03} alt="감정일기장 메인 이미지" />
             </div>
             <div className='item_cont' data-aos="fade-left">
-              <h3 className='item_title'>감정일기장</h3>
+              <h3 className='item_title'>감정일기장<span className='ing'>작업중</span></h3>
               <div className='item_details'>
                 <div className='item_text'>
                 내 감정을 1에서 5까지 표시하고 제목과 게시글을 작성하여 리스트 형식으로 한눈에 볼 수 있는 일기장
