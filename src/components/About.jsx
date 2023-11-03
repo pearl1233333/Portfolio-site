@@ -78,7 +78,7 @@ function About() {
             data-aos="fade-left"
           >
             <Link 
-              to="https://drive.google.com/file/d/1gmweZ_idPkM0CNmgb-sv5AistXibSgl-/view?usp=drive_link"
+              to="https://drive.google.com/file/d/125eAg4OLvYsYP4_4csczBMf329TOWm12/view?usp=sharing"
               target="_blank">
               입사지원서 보기
             </Link>
