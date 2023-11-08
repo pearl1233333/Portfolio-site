@@ -29,8 +29,10 @@ function About() {
             data-aos-once="true">
             <p data-aos="fade-left">
               안녕하세요. 프론트엔드개발자 최진주입니다🖐 <br />
-              저는 사용자를 위해 개발 하고 싶습니다. <br />
-              어떻게 하면 좋은 코드를 짤 수 있을지 고민하고 설계합니다.
+              저는 사용자 중심의 프론트엔드 개발자로, 사용자들이 쉽게 이용할 수 있는<br />
+              인터페이스를 설계하고 기능을 개발합니다. 또한, 사용자들의 편의와 만족을<br />
+              최우선으로 여기며, 접근성을 높이고 지속적인 개선에 힘쓰는<br />
+              ‘사용자를 위한 개발자’입니다.
             </p>
           </div>
           <div className="about_info"
@@ -78,7 +80,7 @@ function About() {
             data-aos="fade-left"
           >
             <Link 
-              to="https://drive.google.com/file/d/125eAg4OLvYsYP4_4csczBMf329TOWm12/view?usp=sharing"
+              to="https://drive.google.com/file/d/125eAg4OLvYsYP4_4csczBMf329TOWm12/view?usp=drive_link"
               target="_blank">
               입사지원서 보기
             </Link>
