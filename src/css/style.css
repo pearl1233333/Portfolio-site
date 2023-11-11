@@ -152,6 +152,34 @@ body {
 .about_title p {
   font-size: 20px;
   font-weight: 500;
+  color: #222;
+}
+.about_title p span {
+  position: relative;
+  width: 100%;
+  color: #222;
+  cursor: pointer;
+}
+.about_title p span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255,.7);
+    border-radius: 3px;
+    opacity: 0;
+    z-index: -1;
+  }
+@media screen and (min-width:1024px) {
+  
+  
+	.about_title p span:hover::before {
+    opacity: 1;
+    transition: all .3s;
+  }
 }
 .about_info ul li {
   display: flex;
