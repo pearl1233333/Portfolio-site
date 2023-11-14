@@ -26,13 +26,17 @@ function About() {
         <div className="about_text">
           <div 
             className="about_title"
-            data-aos-once="true">
-            <p data-aos="fade-left">
-              안녕하세요. 저는 <span>사용자 중심의 프론트엔드 개발자로</span>, <br />
-              사용자들이 쉽게 이용할 수 있는 인터페이스를 설계하고 <br />
-              기능을 개발합니다. 또한, 사용자들의 편의와 만족을 <br />
-              우선으로 여기며, 접근성을 높이고 지속적인 개선에 힘쓰는 <br />
-              <span>사용자를 위한 개발자</span>입니다.
+            data-aos="fade-right">
+            <p>
+              안녕하세요. 저는 퍼블리셔 출신의 프론트엔드 개발자로, <br/>
+              사용자들이 편리하게 이용할 수 있는 직관적이고 간편한 인터페이스를 <br />
+              설계하고 개발하는 것을 즐깁니다.
+            </p>
+            <p>
+              퍼블리싱 프로젝트에서의 경험은 제가 사용자들의 요구에 민감하게 대응하고, <br />
+              높은 품질의 인터페이스를 만들 수 있게 해주었습니다. 이러한 경험을 <br />
+              바탕으로, 프론트엔드 개발 과정에서도 사용자 경험을 항상 우선시하며 기능을 <br />
+              개발하고 있습니다.
             </p>
           </div>
           <div className="about_info"
@@ -77,7 +81,7 @@ function About() {
           </div>
           <div 
             className='about_btn'
-            data-aos="fade-left"
+            data-aos="fade-right"
           >
             <Link 
               to="https://drive.google.com/file/d/125eAg4OLvYsYP4_4csczBMf329TOWm12/view?usp=drive_link"
