@@ -2,7 +2,7 @@ import react from 'react'
 
 function Home() {
 
-  const listHTML = "사용자에 의한<br />사용자를 위한<br />개발자 <span className='title-name'>최진주입니다.</span>";
+  const listHTML = "사용자에 의한,<br />사용자를 위한<br />개발자 <span className='title-name'>최진주입니다.</span>";
   const listItems = listHTML.split("<br />");
 
   return (
