@@ -12,7 +12,7 @@ function Footer() {
               target="_blank"
             />
           </div>
-          <p className="copyright">© 2023. Choi Jin Ju. All rights reserved.</p>
+          <p className="copyright">© 2023.Choipearl. All rights reserved.</p>
       </div>
     </footer>
   )
