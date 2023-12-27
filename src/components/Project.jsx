@@ -108,7 +108,7 @@ function Project() {
                   <div className='btn-group_inner'>
                     <div className="btn-inner">
                     <Link 
-                        to="https://github.com/pearl1233333/weather-app.git" 
+                        to="https://github.com/pearlworld/weather-app.git" 
                         target="_blank"
                         className='btn_github'>깃허브</Link>
                     </div>
@@ -118,7 +118,7 @@ function Project() {
                   <div className='btn-group_inner'>
                     <div className="btn-inner">
                       <Link 
-                        to="https://weather-c4sdpz0rl-pearl1233333.vercel.app" 
+                        to="https://weather-app-pearlworld.vercel.app/" 
                         target="_blank"
                         className='btn_source'>사이트 바로가기</Link>
                     </div>
@@ -161,7 +161,7 @@ function Project() {
                   <div className='btn-group_inner'>
                     <div className="btn-inner">
                     <Link 
-                        to="https://github.com/pearl1233333/simplediary.git" 
+                        to="https://github.com/pearlworld/simplediary.git" 
                         target="_blank"
                         className='btn_github'>깃허브</Link>
                     </div>
