@@ -7,7 +7,7 @@ function Footer() {
       <div className="wrapper">
           <div className="contact">
             <Link 
-              to="https://github.com/pearl1233333" 
+              to="https://github.com/pearlworld" 
               className="ico_github" 
               target="_blank"
             />
