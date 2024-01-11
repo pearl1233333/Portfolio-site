@@ -49,7 +49,7 @@ function About() {
                   <span>생년월일</span> 
                 </div>
                 <div className='text'>
-                  1996.10.23 (28세)
+                  1996.10.23 (만 27세)
                 </div>
               </li>
               <li>
