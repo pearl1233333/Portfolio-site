@@ -135,10 +135,10 @@ function Project() {
               <img src={Banner03} alt="감정일기장 메인 이미지" />
             </div>
             <div className='item_cont' data-aos="fade-left">
-              <h3 className='item_title'>감정일기장<span className='ing'>작업중</span></h3>
+              <h3 className='item_title'>감정일기장</h3>
               <div className='item_details'>
                 <div className='item_text'>
-                내 감정을 1에서 5까지 표시하고 제목과 게시글을 작성하여 리스트 형식으로 한눈에 볼 수 있는 일기장
+                내 감정을 아주 좋음에서 아주 나쁨까지 표시하고 제목과 게시글을 작성하여 리스트 형식으로 한눈에 볼 수 있는 일기장
                 </div>
                 <div className='item_function'>
                   <dl>
@@ -161,7 +161,7 @@ function Project() {
                   <div className='btn-group_inner'>
                     <div className="btn-inner">
                     <Link 
-                        to="https://github.com/pearlworld/simplediary.git" 
+                        to="https://github.com/pearlworld/emotion-diary.git" 
                         target="_blank"
                         className='btn_github'>깃허브</Link>
                     </div>
@@ -171,7 +171,7 @@ function Project() {
                   <div className='btn-group_inner'>
                     <div className="btn-inner">
                       <Link 
-                        to="http://simplediary.vercel.app" 
+                        to="https://emotion-diary-pearworld.vercel.app/" 
                         target="_blank"
                         className='btn_source'>사이트 바로가기</Link>
                     </div>
