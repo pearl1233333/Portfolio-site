@@ -34,7 +34,7 @@
 ### 4. 투두리스트([상세정보](https://github.com/pearlworld/todo-list) / [바로가기](https://todo-list-pearlworld.vercel.app/))<br />
 Vue를 이용한 투두리스트 <br />
 > 해야 할 일을 체크리스트로 만든 목록 앱
-- 제작기간 : 2024.02.04 ~ 2024.02.19
+- 제작기간 : 2024.02.07 ~ 2024.02.19
 - 담당 : 리스트 작성·수정·삭제
 - 언어 및 기술 : javascript, Vue
 
