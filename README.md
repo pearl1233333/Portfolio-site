@@ -27,7 +27,7 @@
 ### 3. 감정일기장([상세정보](https://github.com/pearlworld/emotion-diary.git) / [바로가기](https://emotion-diary-pearworld.vercel.app/))<br />
 5가지 감정일기장 <br />
 > 내 감정을 아주 좋음에서 아주 나쁨까지 표시하고 제목과 게시글을 작성하여 리스트 형식으로 한눈에 볼 수 있는 일기장
-- 제작기간 : 2023.11.02 ~ 2023.12.27
+- 제작기간 : 2023.11.02 ~ 2023.12.22
 - 담당 : 일기 작성·수정·삭제, 감정별 필터 기능
 - 언어 및 기술 : javascript, React
 
