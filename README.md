@@ -12,7 +12,7 @@
 - 설계 및 제작 : 최진주<br />
 - 제작기간 : 2023.09 ~ 2023.11<br />
 - 기능 : 반응형 웹, email 전송, 도메인 연결<br />
-- 사용 기술 : javascript, React, Vercel
+- 사용 기술 : html&css, javascript, React, Vercel
 
 ## 🛠 사용 기술
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/></a>
