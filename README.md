@@ -1,11 +1,31 @@
 # 💎 최진주 포트폴리오
 최진주 개인 포트폴리오입니다. <br />
-🔗 https://www.choipearl.com/ 
-<br />
+
 ## 📍 소개
 안녕하세요. "사용자에 의한, 사용자를 위한 개발자" 최진주입니다. <br />
 사용자들이 어떻게 하면 웹 환경을 쉽게 이용할 수 있을지 고민하고 
-사용자들의 피드백을 존중하고 반영하는 개발자가 되고 싶습니다. <br />
+사용자들의 피드백을 존중하고 반영하는 개발자가 되고 싶습니다. 
+<br />
+
+## 📝 포트폴리오 정보
+- 프로젝트 : 개인 포트폴리오<br />
+- 설계 및 제작 : 최진주<br />
+- 제작기간 : 2023.09 ~ 2023.11<br />
+- 기능 : 반응형 웹, email 전송, 도메인 연결<br />
+- 사용 기술 : javascript, React, Vercel
+
+## 🛠 사용 기술
+![js](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![js](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![js](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+<br />
+
+
+## 🔗 링크
+https://www.choipearl.com/
+<br />
+<br />
 
 ## 💻 프로젝트
 ### 1. 술렁술렁([상세정보](https://github.com/roalwh/Project-OMDB-Public) / [바로가기](http://roalwh.iptime.org:20108/)) <br />
@@ -38,3 +58,5 @@ Vue를 이용한 투두리스트 <br />
 - 담당 : 리스트 작성·수정·삭제
 - 언어 및 기술 : javascript, Vue
 
+## ✉️ 문의
+cjjj28970@gmail.com
