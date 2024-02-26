@@ -58,5 +58,9 @@ Vue를 이용한 투두리스트 <br />
 - 담당 : 리스트 작성·수정·삭제
 - 언어 및 기술 : javascript, Vue
 
+## 🚀 업데이트
+- react-router-hash-link 설치&적용(예정)
+- Vue TodoList 프로젝트 추가(예정)
+
 ## ✉️ 문의
 cjjj28970@gmail.com
