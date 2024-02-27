@@ -475,6 +475,11 @@ body {
     padding-bottom: 0;
   }
 }
+@media (max-width: 980px) {
+  .item_text br {
+      display: none;
+    }
+}
 @media (max-width: 768px) {
   .project_item {
     display: block;

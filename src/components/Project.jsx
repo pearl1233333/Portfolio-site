@@ -29,7 +29,7 @@ function Project() {
               <h3 className='item_title'>술렁술렁<span className='small'> _ 전통주 정보공유 웹 플랫폼 </span></h3>
               <div className='item_details'>
                 <div className='item_text'>
-                  동기들과 진행한 파이널 프로젝트입니다. 술을 좋아하는 5명의 학생들이 모여 우리나라의 전통주를 널리 알리고자 만든 웹 사이트입니다.
+                  술을 좋아하는 5명의 학생들이 모여 우리나라의 전통주를 널리 알리고자 만든 웹 사이트
                 </div>
                 <div className='item_function'>
                   <dl>
@@ -37,7 +37,7 @@ function Project() {
                     <dd><span>📍</span> 전체페이지 기획 및 설계</dd>
                     <dd><span>📍</span> 전체페이지 디자인&퍼블리싱 및 반응형</dd>
                     <dd><span>📍</span> 메인페이지 랜덤 추천 기능</dd>
-                    <dd><span>📍</span> 전통주 전체·카테고리별 검색 페이지</dd>
+                    <dd><span>📍</span> 전통주 전체·카테고리별 검색</dd>
                     <dd><span>📍</span> 전통주 상세페이지</dd>
                   </dl>
                 </div>
@@ -86,19 +86,20 @@ function Project() {
               <h3 className='item_title'>날씨 앱<span className='small'> _ 전세계 날씨 정보 앱</span></h3>
               <div className='item_details'>
                 <div className='item_text'>
-                  OpenWeatherMap api를 활용해 만든 개인프로젝트입니다. 
+                  OpenWeatherMap api를 활용해 만든 나라별로 검색과 즐겨찾기가 가능하고 <br />실시간으로 날씨를 확인할 수 있는 앱
                 </div>
                 <div className='item_function'>
                   <dl>
                     <dt className='title'>담당</dt>
-                    <dd><span>📍</span> 전체페이지 기획 및 설계</dd>
-                    <dd><span>📍</span> 전체페이지 디자인&퍼블리싱 및 반응형</dd>
+                    <dd><span>📍</span> 기획 및 설계</dd>
+                    <dd><span>📍</span> 나라별 검색, 즐겨찾기 추가·삭제 기능</dd>
                   </dl>
                 </div>
                 <div className='item_function'>
                   <p className='title'>사용기술</p>
                   <ul className='item_technic'>
                     <li className='hmtl'>HTML5&CSS3</li>
+                    <li className='js'>Javascript</li>
                     <li className='react'>React</li>
                     <li className='vercel'>Vercel</li>
                   </ul>
@@ -139,19 +140,20 @@ function Project() {
               <h3 className='item_title'>감정일기장</h3>
               <div className='item_details'>
                 <div className='item_text'>
-                내 감정을 아주 좋음에서 아주 나쁨까지 표시하고 제목과 게시글을 작성하여 리스트 형식으로 한눈에 볼 수 있는 일기장
+                내 감정을 아주 좋음에서 아주 나쁨까지 표시하고 제목과 게시글을 작성하여 <br />리스트 형식으로 한눈에 볼 수 있는 일기장
                 </div>
                 <div className='item_function'>
                   <dl>
                     <dt className='title'>담당</dt>
-                    <dd><span>📍</span> 전체페이지 기획 및 설계</dd>
-                    <dd><span>📍</span> 전체페이지 디자인&퍼블리싱 및 반응형</dd>
+                    <dd><span>📍</span> 기획 및 설계</dd>
+                    <dd><span>📍</span> 일기 작성·수정·삭제, 감정별 필터 기능</dd>
                   </dl>
                 </div>
                 <div className='item_function'>
                   <p className='title'>사용기술</p>
                   <ul className='item_technic'>
                     <li className='hmtl'>HTML5&CSS3</li>
+                    <li className='js'>Javascript</li>
                     <li className='react'>React</li>
                     <li className='vercel'>Vercel</li>
                   </ul>
