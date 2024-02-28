@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import Banner01 from "../images/img_project1.jpg"
 import Banner02 from "../images/img_project2.png"
 import Banner03 from "../images/img_project3.jpg"
+import Banner04 from "../images/img_project4.png"
 import subProject1 from "../images/img_publishing_project1.jpg"
 import subProject2 from "../images/img_publishing_project2.jpg"
 import subProject3 from "../images/img_publishing_project3.jpg"
@@ -175,6 +176,60 @@ function Project() {
                     <div className="btn-inner">
                       <Link 
                         to="https://emotion-diary-pearworld.vercel.app/" 
+                        target="_blank"
+                        className='btn_source'>사이트 바로가기</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            className='project_item'
+            data-aos-once="true"
+          >
+            <div className="item_image" data-aos="fade-right">
+              <img src={Banner04} alt="투두리스트 메인 이미지" />
+            </div>
+            <div className='item_cont' data-aos="fade-left">
+              <h3 className='item_title'>투두리스트</h3>
+              <div className='item_details'>
+                <div className='item_text'>
+                해야 할 일을 체크리스트로 만든 목록 앱
+                </div>
+                <div className='item_function'>
+                  <dl>
+                    <dt className='title'>담당</dt>
+                    <dd><span>📍</span> 기획 및 설계</dd>
+                    <dd><span>📍</span> 리스트 작성·수정·삭제</dd>
+                  </dl>
+                </div>
+                <div className='item_function'>
+                  <p className='title'>사용기술</p>
+                  <ul className='item_technic'>
+                    <li className='hmtl'>HTML5&CSS3</li>
+                    <li className='js'>Javascript</li>
+                    <li className='vue'>Vue.js</li>
+                    <li className='vercel'>Vercel</li>
+                  </ul>
+                </div>           
+              </div>
+              <div className='item_btn'>
+                <div className='btn-group'>
+                  <div className='btn-group_inner'>
+                    <div className="btn-inner">
+                    <Link 
+                        to="https://github.com/pearlworld/todo-list.git" 
+                        target="_blank"
+                        className='btn_github'>깃허브</Link>
+                    </div>
+                  </div>
+                </div>
+                <div className='btn-group'>
+                  <div className='btn-group_inner'>
+                    <div className="btn-inner">
+                      <Link 
+                        to="https://todo-list-pearlworld.vercel.app/" 
                         target="_blank"
                         className='btn_source'>사이트 바로가기</Link>
                     </div>

@@ -450,6 +450,9 @@ body {
 .item_technic .react {
   background-color: #05f3ff;
 }
+.item_technic .vue {
+  background-color: #4FC08D;
+}
 .item_technic .maria {
   background-color: #ed5b00;
 }
