@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { HashLink } from 'react-router-hash-link';
 
 function Header() {
   
@@ -11,10 +11,10 @@ function Header() {
         </div>
         <nav className='nav--menu'>
           <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#project">PROJECT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><HashLink smooth to="#home">HOME</HashLink></li>
+            <li><HashLink smooth to="#about">ABOUT</HashLink></li>
+            <li><HashLink smooth to="#project">PROJECT</HashLink></li>
+            <li><HashLink smooth to="#contact">CONTACT</HashLink></li>
           </ul>
         </nav>
       </div>
