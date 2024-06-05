@@ -233,6 +233,9 @@ body {
   color: #fff;
   box-sizing: border-box;
 }
+.about_btn a:first-child { 
+  margin-right: 7px;
+}
 .about_img {
   width: 340px;
   border-radius: 10px;

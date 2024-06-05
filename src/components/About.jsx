@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 import person from "../images/img_person.jpg" 
 
@@ -80,6 +80,11 @@ function About() {
               to="https://drive.google.com/file/d/125eAg4OLvYsYP4_4csczBMf329TOWm12/view?usp=sharing"
               target="_blank">
               입사지원서 보기
+            </Link>
+            <Link 
+              to="https://drive.google.com/file/d/1InM4n54Rqt0sSexFL6ElJxHAYpE0lOsv/view?usp=drive_link"
+              target="_blank">
+              경력기술서 보기
             </Link>
           </div>
         </div>
